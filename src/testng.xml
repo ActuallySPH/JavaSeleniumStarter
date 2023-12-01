@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Company Demo Test" thread-count="10" parallel="tests">
+    <parameter name="browserName" value="MsEdge" />
+    <parameter name="browserVersion" value="Beta" />
+    <test name="Chrome Test" preserve-order="true">
+        <parameter name="browserName" value="MsEdge" />
+        <parameter name="browserLanguage" value="en-US" />
+<!--        <parameter name="browserVersion" value="Beta" />-->
+        <classes>
+            <class name="com.company.test.SignInTests"/>
+
+        </classes>
+    </test>
+</suite>
